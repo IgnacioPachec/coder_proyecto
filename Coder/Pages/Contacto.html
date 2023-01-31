@@ -19,66 +19,89 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header><!--NAVBAR BOOTSTRAP-->
+        <nav class="navbar bg-body-tertiary fixed-top position-relative ">
             <div class="container-fluid">
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="../Assets/stripe.svg" alt="" width="90" height="80">
-                        </a>
-                    </div>
-                </nav>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="../Assets/stripe.svg" alt="" width="90" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Acercad.html">Ubicacion</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../Assets/stripe.svg" alt=""
+                                width="90" height="80"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Pages/crea_usuario.html">Crea tu usuario</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../Pages/Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Conoce mas de nosotros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"></a></li>
+                                    <li><a class="dropdown-item" href="../Pages/Contacto.html">Contacto</a></li>
+                                    <li><a class="dropdown-item" href="../Pages/Acercad.html">Ubicacion</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Cerrar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
-
     </header>
-    <main>
+    <main><!--BOOTSTRAP FORMULARIOS DE CONTACTO-->
         <nav>
             <h3 class="titulo">Contacto</h3>
-            <p class="p" style="background-color: khaki;">
+            <p class="descripcion">
                 En caso de necesitar dar algun detalle en especifico sobre el tipo de entrega, reembolsos o pagos
                 escribir
                 en este espacio
             </p>
+            <br>
         </nav>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nombre de usuario</label>
+        <div class="mb-3 ">
+            <label for="exampleFormControlInput1" class="form-label contacto">Nombre de usuario:</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre de usuario">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Contacto</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="mb-3 ">
+            <label for="exampleFormControlTextarea1" class="form-label contacto">Contacto:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2 botonC" type="button">Enviar</button>
+
         </div>
     </main>
-    <footer>
+    <footer><!--REDES LINKEABLES-->
         <nav class="redes">
-            <i class="fa-brands fa-whatsapp fa-2x"></i>
-            <i class="fa-brands fa-facebook fa-2x"></i>
-            <i class="fa-brands fa-instagram fa-2x"></i>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2x whap"></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i
+                    class="fa-brands fa-facebook fa-2x facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2x insta"></i></a>
         </nav>
-        <br>
-        <br>
         <nav class="derechos">
             <article>Todos los derechos reservados</article>
         </nav>
