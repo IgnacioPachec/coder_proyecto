@@ -39,7 +39,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../Pages/crea_usuario.html">Crea tu usuario</a>
@@ -72,62 +72,40 @@
         </nav>
     </header>
 
-    <main><!--CARDS BOOTSTRAP, mostrando los 3 productos vendidos por la pagina-->
-        
-        <div class="abs-center position-relative">
-            <div class="card-img-top" style="width: 18rem;">
-                <img src="../Imagenes/Pantalon pagina.jpg" class="card-img-top rounded" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Jeans</h5>
-                    <p class="card-text">
-                    </p>
-                    <a href="#" class="btn btn-primary">Ver producto</a>
+    <main><!--BOOTSTRAP PARA CREAR USUARIO-->
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label contacto ">Usuario</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Este usuario servira para obtener descuentos</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label contacto ">E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword5" class="form-label contacto ">Contraseña</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="passwordHelpBlock" class="form-text">
+                    Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener
+                    espacios, caracteres especiales ni emoji.
                 </div>
             </div>
-            <div class="card-img-top" style="width: 18rem;">
-                <img src="../Imagenes/Remera negra destacada.jpg" class="card-img-top rounded" alt="...">
-                <div class="card-body ">
-                    <h5 class="card-title">Remeras</h5>
-                    <p class="card-text">
-                    </p>
-                    <a href="#" class="btn btn-primary">Ver producto</a>
-                </div>
+            <br>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recibir ofertas</label>
             </div>
-            <div class="card-img-top" style="width: 18rem;">
-                <img src="../Imagenes/Sueter pagina.jpg" class="card-img-top rounded" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sueters</h5>
-                    <p class="card-text">
-                    </p>
-                    <a href="#" class="btn btn-primary">Ver producto</a>
-                </div>
-            </div>
-        </div>
-        <!--NAVBAR BOOTSTRAP iniciando con su usuario tendria un descuento-->
-        <nav class="navbar bg-body-tertiary">
-            <form class="container-fluid">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Usuario</span>
-                    <input type="text" class="form-control" placeholder="" aria-label="Username"
-                        aria-describedby="basic-addon1">
-                    <button type="button" class="btn btn-primary"
-                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                        Ingresar
-                    </button>
-                </div>
-            </form>
-        </nav>
+            <button type="submit" class="btn btn-primary">Crear usuario</button>
+        </form>
     </main>
-    <br>
-    <aside><!--Imagen con formas de pago-->
-        <h3 class="descripcion fs-4">Todas tus formas de pago</h3>
-        <img src="../Imagenes/Imagen de forma de pagos2.png" class="img-fluid img" alt="...">
-    </aside>
-    <br>
-    <footer><!--Iconos con redes sociales linkeables-->
+
+    <footer><!--FOOTER CON REDES LINKEABLES-->
+        <br>
         <nav class="redes">
             <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2x whap "></i></a>
-            <a href="https://es-la.facebook.com/ " target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2x insta "></i></a>
         </nav>
         <nav class="derechos fs-5">
