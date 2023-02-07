@@ -19,8 +19,8 @@
 </head>
 
 <body>
-    <header><!--NAVBAR BOOTSTRAP-->
-        <nav class="navbar bg-body-tertiary fixed-top position-relative ">
+    <header> <!--NAVBAR BOOTSTRAP-->
+        <nav class="navbar bg-body-tertiary fixed-top position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="../Assets/stripe.svg" alt="" width="90" height="80">
@@ -64,45 +64,51 @@
                             </li>
                         </ul>
                         <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                         </form>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main><!--BOOTSTRAP FORMULARIOS DE CONTACTO-->
-        <nav>
-            <h3 class="titulo">Contacto</h3>
-            <p class="descripcion">
-                En caso de necesitar dar algun detalle en especifico sobre el tipo de entrega, reembolsos o pagos
-                escribir
-                en este espacio
-            </p>
-            <br>
-        </nav>
-        <div class="mb-3 ">
-            <label for="exampleFormControlInput1" class="form-label contacto">Nombre de usuario:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre de usuario">
-        </div>
-        <div class="mb-3 ">
-            <label for="exampleFormControlTextarea1" class="form-label contacto">Contacto:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-        </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="btn btn-primary me-md-2 botonC" type="button">Enviar</button>
 
-        </div>
+    <main><!--BOOTSTRAP PARA CREAR USUARIO-->
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label contacto ">Usuario</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Este usuario servira para obtener descuentos</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label contacto ">E-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword5" class="form-label contacto ">Contraseña</label>
+                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <div id="passwordHelpBlock" class="form-text">
+                    Su contraseña debe tener entre 8 y 20 caracteres, contener letras y números, y no debe contener
+                    espacios, caracteres especiales ni emoji.
+                </div>
+            </div>
+            <br>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recibir ofertas</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear usuario</button>
+        </form>
     </main>
-    <footer><!--REDES LINKEABLES-->
+
+    <footer><!--FOOTER CON REDES LINKEABLES-->
+        <br>
         <nav class="redes">
-            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2x whap"></i></a>
-            <a href="https://es-la.facebook.com/" target="_blank"><i
-                    class="fa-brands fa-facebook fa-2x facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2x insta"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2x whap "></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2x insta "></i></a>
         </nav>
-        <nav class="derechos">
+        <nav class="derechos fs-5">
             <article>Todos los derechos reservados</article>
         </nav>
     </footer>
@@ -111,3 +117,5 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
+
+</html>

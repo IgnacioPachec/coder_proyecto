@@ -7,27 +7,156 @@
 .titulo {
     display: flex;
     justify-content: center;
-    padding: 2%;
+    padding: 20px;
     text-decoration: underline;
-    background-color: khaki;
 }
 
 .redes {
     display: flex;
     justify-content: space-around;
     padding: 2%;
-    background-color: khaki;
+    background-color: rgb(239, 233, 233)
 }
 
 .derechos {
     display: flex;
     justify-content: center;
-    background-color: khaki;
     padding: 3%;
     font-weight: bolder;
+    background-color: rgb(239, 233, 233)
 }
 
-.p {
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 1%;
+    object-fit: cover;
+    width: 40%;
+    height: 50%;
+}
+
+.descripcion {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.pro {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 20px;
+}
+
+.contacto {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.whap {
+    color: rgb(5, 172, 5);
+}
+
+.insta {
+    color: rgb(102, 39, 39);
+}
+
+.botonC {
+    display: flex;
+    margin: 8px;
+}
+
+.maps {
+    text-align: center;
+}
+
+.contacto2 {
+    padding: 50px;
+}
+
+.ubicacion {
+    text-decoration: underline;
+}
+
+.numero {
+    text-decoration: underline;
+}
+
+.email {
+    text-decoration: underline;
+}
+
+.jeans {
+    text-align: center;
+}
+
+.ver {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bienvenidos {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    height: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+}
+
+.row .card{
+    width: 30px;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px;
+    transition: all 400rs ease-out;
+    cursor: default;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px;
+    transform: translateY(-3%);
+    rgba( 0, 0, 0, 0,4);
+}
+
+.card img{
+    max-width: 1100px;
+}
+
+.texto{
     display: flex;
     justify-content: center;
 }
+
+@media (max-width:800px) {
+    .row{
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width:300px){
+    .row{
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+
+
+

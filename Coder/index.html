@@ -19,96 +19,124 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header> <!--NAVBAR BOOTSTRAP-->
+        <nav class="navbar bg-body-tertiary fixed-top position-relative ">
             <div class="container-fluid">
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="./Assets/stripe.svg" alt="" width="90" height="80">
-                        </a>
-                    </div>
-                </nav>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="./Assets/stripe.svg" alt="" width="90" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Pages/Productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Pages/Contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Pages/Acercad.html">Ubicacion</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./Assets/stripe.svg" alt=""
+                                width="90" height="80"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Pages/crea_usuario.html">Crea tu usuario</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Pages/Productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Conoce mas de nosotros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"></a></li>
+                                    <li><a class="dropdown-item" href="./Pages/Contacto.html">Contacto</a></li>
+                                    <li><a class="dropdown-item" href="./Pages/Acercad.html">Ubicacion</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Cerrar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
-
     </header>
 
-    <main>
-        <h2 class="titulo">¡Bienvenidos!</h2>
-        <div class="card-img-top " style="width: 18rem;">
-            <img src="./Imagenes/Pantalon dama pagina.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Jeans</h5>
-                <p class="card-text">
-                </p>
-                <a href="#" class="btn btn-primary">Ver producto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./Imagenes/Remera negra destacada.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Remeras</h5>
-                <p class="card-text">
-                </p>
-                <a href="#" class="btn btn-primary">Ver producto</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="./Imagenes/Sueter pagina.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Sueters</h5>
-                <p class="card-text">
-                </p>
-                <a href="#" class="btn btn-primary">Ver producto</a>
-            </div>
-        </div>
-        <nav class="navbar bg-body-tertiary">
-            <form class="container-fluid">
-                <div class="input-group">
-                    <span class="input-group-text" id="basic-addon1">Nombre de usuario para descuentos</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                        aria-describedby="basic-addon1">
+    <main><!--CARDS BOOTSTRAP, mostrando los 3 productos vendidos por la pagina-->
+        <h3 class="bienvenidos">¡Bienvenidos!</h3>
+        <div class="abs-center cards">
+            <div class="card-img-top" style="width: 18rem;">
+                <img src="./Imagenes/Pantalon pagina.jpg" class="card-img-top rounded" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title jeans">Jeans</h5>
+                    <p class="card-text">
+                    </p>
+                    <button type="button" class="btn btn-outline-dark ver">Ver producto</button>
                 </div>
-            </form>
-        </nav>
+            </div>
+            <div class="card-img-top" style="width: 18rem;">
+                <img src="./Imagenes/Remera negra destacada.jpg" class="card-img-top rounded" alt="...">
+                <div class="card-body ">
+                    <h5 class="card-title jeans ">Remeras</h5>
+                    <p class="card-text">
+                    </p>
+                    <button type="button" class="btn btn-outline-dark ver ">Ver producto</button>
+                </div>
+            </div>
+            <div class="card-img-top" style="width: 18rem;">
+                <img src="./Imagenes/Sueter pagina.jpg" class="card-img-top rounded" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title jeans ">Sueters</h5>
+                    <p class="card-text">
+                    </p>
+                    <button type="button" class="btn btn-outline-dark ver ">Ver producto</button>
+                </div>
+            </div>
+        </div>
+                <!--NAVBAR BOOTSTRAP iniciando con su usuario tendria un descuento-->
+                <nav class="navbar bg-body-tertiary">
+                    <form class="container-fluid">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Usuario" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                                <button type="button" class="btn btn-outline-success">Ingresar</button>
+                        </div>
+                    </form>
+                </nav>
+                <br>
     </main>
 
+    <aside><!--Imagen con formas de pago-->
+        <h3 class="descripcion fs-4">Todas tus formas de pago</h3>
+        <img src="./Imagenes/Imagen de forma de pagos2.png" class="img-fluid img" alt="...">
+    </aside>
 
-    <footer>
+    <footer><!--Iconos con redes sociales linkeables-->
         <nav class="redes">
-            <i class="fa-brands fa-whatsapp fa-2x"><a href="https://web.whatsapp.com/"></a></i>
-            <i class="fa-brands fa-facebook fa-2x"><a href=""></a></i>
-            <i class="fa-brands fa-instagram fa-2x"><a href=""></a></i>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-2x whap "></i></a>
+            <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-2x insta "></i></a>
         </nav>
-        <nav class="derechos">
+        <nav class="derechos fs-5">
             <article>Todos los derechos reservados</article>
         </nav>
     </footer>
-
     <!--CDN BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
